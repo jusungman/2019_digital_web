@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*header*/
+header#header_wrap{
+	width: 980px;height: 100px;margin: 0 auto;
+	background-color:fray;position: relative;
+}
+header#header_wrap>hl{
+	width:100px;margin: 0 auto;
+	background-color;#edabe8;text-align:center;
+}
+header#header_wrap>div.util_menu{
+	width:300px;height:35px;
+	background-color:skyblue;
+	position:absolute;right:0;top:10px;
+	text-align:center;
+}
+header#header_wrap>nav.gnb_wrap{
+	widrh:980px;height:45px;
+	background-color:violet;
+	position: absolute;
+	bottom:0;text-align:center;
+}

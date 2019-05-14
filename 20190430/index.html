@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>box css</title>
+	<style>
+		*{margin:0;}
+		div.div_wrap{width:200px;height:100px;background-color:gray;}
+		div.div_wrap div{width:100px;height:100px;float:left;border:10px solid black;
+			padding:10px;box-sizing:border-box; }
+		div.div_wrap>div:nth-child(1){background-color:red;}
+		div.div_wrap>div:nth-child(2){background-color:blue;}
+
+
+	</style>
+</head>
+<body>
+	<div class="div_wrap">
+		<div>1</div> <!-- red -->
+		<div>2</div> <!-- biue -->
+	</div>
+	
+</body>
+</html>
