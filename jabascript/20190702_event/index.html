@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>event</title>
+</head>
+<body>
+	<p id="p1">마우스를 올려 보세요</p>
+
+	<script>
+		document.getElementById("p1").onmouseover = f;
+
+		function f(e){
+			alert(e.type+"안녕하세요!");
+		}
+	</script>
+</body>
+</html>

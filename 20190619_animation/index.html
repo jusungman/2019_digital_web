@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<style>
+		.box{
+			width:  100px;height: 100px;
+			background-color: #f00;
+            position: absolute;
+            bottom: 0;border-radius: 50px;
+			animation: boxmove 2s linear;
+		}
+		@keyframes boxmove{
+			0%{left: 0;}
+			50%{left: 300px;}
+			100%{left: 0;}
+		}
+		.box1{
+			width:200px;height:10px;
+			background-color:blue;
+			animation:linear 2s linear;
+		}
+		@keyframes liner{
+			from{width: 0;}
+			to{width: 200px;}
+		}
+		.box2{
+			width: 0;height: 10px;
+			background-color: skybulue;
+			animation: liner2 2s liner;
+			animation: delay:2s;
+			animation-fill-mode: forwards;
+			position: absolute;left: 200px;top: 8px;
+		}
+		@keyframes linear2{
+			from{width: 0;}
+			to{width: 200px;}
+		}
+		.button{width: 200px;height: 40px;line-height: 40px;
+			background-color: orange;
+			text-align: center;position: relative;}
+
+			.bar{width: 200px;height: 5px;
+				position: absolute;
+				bottom: 0;background-color: #f00;
+				animation: btnBar 0.8;
+				animation-play-state: paused;
+			}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+</body>
+</html>
